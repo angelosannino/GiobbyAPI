@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Constants",
+        "repositoryURL": "https://github.com/angelosannino/Constants.git",
+        "state": {
+          "branch": null,
+          "revision": "a95f15de4344610cafbd275026b34d343a268903",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "Extensions",
+        "repositoryURL": "https://github.com/angelosannino/Extensions.git",
+        "state": {
+          "branch": null,
+          "revision": "77217ba6b4ab9eafb8803dc9b23b2c33db728a5f",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
