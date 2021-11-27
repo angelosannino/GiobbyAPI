@@ -6,6 +6,34 @@ import PackageDescription
 let moduleName = "GiobbyAPI"
 let testModuleName = "GiobbyAPITests"
 
+let package = Package(
+    name: moduleName,
+    platforms: [.iOS(.v15)],
+    products: [
+        .library(
+            name: moduleName,
+            targets: [moduleName]),
+    ],
+    dependencies: [],
+    targets: [
+        .target(
+            name: moduleName),
+        .testTarget(
+            name: testModuleName,
+            dependencies: [
+                .byName(name: moduleName)
+            ]),
+    ],
+    swiftLanguageVersions: [
+        .version("5.5")
+    ]
+)
+
+
+/* *** OLD PACKAGE WITH DEPENDANCIES ***
+let moduleName = "GiobbyAPI"
+let testModuleName = "GiobbyAPITests"
+
 let remoteDependancies = false
 
 let constants = "Constants"
@@ -50,6 +78,7 @@ var targetDependancies: [Target.Dependency] {
 
 let package = Package(
     name: moduleName,
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: moduleName,
@@ -94,3 +123,4 @@ let package = Package(
         .version("5.5")
     ]
 )
+ */
